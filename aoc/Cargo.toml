@@ -1,0 +1,10 @@
+[package]
+name = "aoc"
+version = "0.1.0"
+authors = ["Thomas ten Cate <ttencate@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+aoc_proc_macros = { "path" = "proc_macros" }
+kuchiki = "0.8.1"
+reqwest = { version = "0.11.13", features = ["blocking"] }
