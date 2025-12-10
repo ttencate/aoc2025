@@ -10,6 +10,10 @@ pub struct Idx {
 }
 
 impl Idx {
+    pub fn new(x: isize, y: isize) -> Self {
+        Self { x, y }
+    }
+
     pub fn offset(self, dx: isize, dy: isize) -> Self {
         Self {
             x: self.x + dx,
@@ -36,6 +40,7 @@ impl Idx {
     }
 }
 
+#[derive(Clone)]
 pub struct Grid<T> {
     size: Idx,
     cells: Vec<T>,
